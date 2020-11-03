@@ -1,0 +1,5 @@
+*.wav
+!synth_exampe.wav
+.ipynb_checkpoints
+.pytest_cache
+samples
