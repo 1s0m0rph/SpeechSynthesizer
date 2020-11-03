@@ -25,5 +25,5 @@ from synthesizer import *
 # generate_voiceles_fricative(formant_amps, dur, noise_sample_increment=noise_sample_increment, scale=scale, plot=False, ofile="fricative.wav")
 # generate_voiced_fricative(100, formant_amps, dur, voicing_amp=voicing_amp, noise_sample_increment=noise_sample_increment, scale=scale, plot=False, ofile="fricative.wav")
 
-ipa_to_synth_cf('aɪ si iu',[0.05,0.05,0.1,0.1,0.25,0.1,0.05,0.07],100,cf_len=0.03)#:D
+ipa_to_synth_cf('ʒi',[0.1,0.25],100,cf_len=0.03)#:D
 # ipa_to_synth_cf('ai',[0.15,0.2],100)
