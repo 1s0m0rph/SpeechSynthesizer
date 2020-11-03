@@ -3,3 +3,5 @@
 .ipynb_checkpoints
 .pytest_cache
 samples
+.idea
+__pycache__
