@@ -134,6 +134,7 @@ trans_window is the size of the window we will ifft to for each step in the tran
 '''
 def generate_crossfade_wave(form1,form2,f0,cf_len=0.05,trans_window=100,srate=44100,base_amp=1):
 	assert(len(form1) == len(form2))
+	#TODO: since the formants are ultimately mapped onto harmonics, the granularity of this transition is almost entirely dependant on the distance between the vowels in vowel-space and f0
 
 	'''
 	give me a standard vowel formatted
@@ -173,11 +174,11 @@ def generate_crossfade_wave(form1,form2,f0,cf_len=0.05,trans_window=100,srate=44
 #let's use what we have now to generate a few samples
 #values from https://en.wikipedia.org/wiki/Formant
 eng_vowel_fmts = {'i':{240:50,2400:45,3500:0},
-				 'ɪ':{342:50,2278:45,3500:0},#not present in wiki article (based on my own production)
+				 'ɪ':{443:50,2000:45,3500:0},#not present in wiki article (based on my own production)
 				 'ɛ':{610:50,1900:45,3500:0},
 				 'e':{390:50,2300:45,3500:0},
-				 'ɑ':{850:50,940:45,2500:0},
-				 'ɔ':{500:50,700:45,2000:0},
+				 'ɑ':{750:50,1200:45,2500:0},#present in wiki article, but based on my own production
+				 'ɔ':{625:50,927:45,3500:0},#based on HW2 sound file 12
 				 'ʊ':{454:50,1379:45,2500:0},#not present in wiki article (based on my own production)
 				 'u':{250:50,595:45,1800:0},
 				 'ə':{750:50,1220:45,2500:0},#not present in wiki article (based on my own production)

@@ -8,7 +8,7 @@ from stop_consonant_synthesizer import *
 
 #TODO CV and VC transitions (VOT etc.)
 def ipa_to_synth_cf(sounds,slens,f0,of=None,cf_len=0.05,trans_window=100,base_amp=1,**kwargs):
-	assert(len(sounds) == len(slens))
+	assert(len(sounds) <= len(slens))
 	srate = 44100
 	no_blend_sounds = {' '}#don't blend vowels into these sounds
 	sound_dat = np.array([])

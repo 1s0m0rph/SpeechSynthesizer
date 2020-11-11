@@ -25,5 +25,21 @@ from synthesizer import *
 # generate_voiceles_fricative(formant_amps, dur, noise_sample_increment=noise_sample_increment, scale=scale, plot=False, ofile="fricative.wav")
 # generate_voiced_fricative(100, formant_amps, dur, voicing_amp=voicing_amp, noise_sample_increment=noise_sample_increment, scale=scale, plot=False, ofile="fricative.wav")
 
-ipa_to_synth_cf('ʒi',[0.1,0.25],100,cf_len=0.03)#:D
+# eng_vowel_fmts = {'i':{240:50,2400:45,3500:0},
+# 				 'ɪ':{342:50,2278:45,3500:0},#not present in wiki article (based on my own production)
+# 				 'ɛ':{610:50,1900:45,3500:0},
+# 				 'e':{390:50,2300:45,3500:0},
+# 				 'ɑ':{850:50,940:45,2500:0},
+# 				 'ɔ':{500:50,700:45,2000:0},
+# 				 'ʊ':{454:50,1379:45,2500:0},#not present in wiki article (based on my own production)
+# 				 'u':{250:50,595:45,1800:0},
+# 				 'ə':{750:50,1220:45,2500:0},#not present in wiki article (based on my own production)
+# 				 'ʌ':{600:50,1170:45,2500:0},
+# 				 'æ':{725:50,1691:45,3000:0},#not present in wiki article (based on my own production)
+# 				 'a':{850:50,1610:45,3000:0},
+# 				 'o':{360:50,640:45,2000:0},
+# 				}
+
+ipa_to_synth_cf('iɛs',[0.1,0.15,0.15],100,cf_len=0.03)#:D
+# ipa_to_synth_cf('ɪ',[1],100,cf_len=0.03)#:D
 # ipa_to_synth_cf('ai',[0.15,0.2],100)
